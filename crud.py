@@ -5,6 +5,8 @@ Created on Fri Jun 16 22:59:03 2023
 @author: Erick
 """
 
+from usuarioLES import Usuario
+
 class Crud:
     def __init__(self, crear, leer, modificar, eliminar):
         self.crear = crear
@@ -26,6 +28,9 @@ class Crud:
                 input()
             elif opcion_crud == '2':      
                 print('\n\n->LEER')
+                lista_usuarios = Usuario()
+                lista_usuarios.CargarXML(1)
+                lista_usuarios.Imprimir()
                 input()
             elif opcion_crud == '3':
                 print('\n\n->MODIFICAR')

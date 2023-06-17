@@ -7,7 +7,6 @@ Created on Fri Jun 16 07:58:01 2023
 
 # from usuarioLES import Usuario
 from crud import Crud
-from usuarioLES import Usuario
 
 class Administrador:
     def __init__(self, correo_admin, contrasena_admin):
@@ -31,9 +30,7 @@ class Administrador:
                     print('-> GESTIONAR usuarios')
                     crud = Crud
                     crud.imprimir_crud(self)
-                    lista_usuarios = Usuario()
-                    lista_usuarios.CargarXML(1)
-                    lista_usuarios.Imprimir()
+                 
                     input('\n')
                 elif opcion_admin == '2':      
                     print('->GESTIONAR CATEGORIAS Y PELICULAS')
