@@ -27,9 +27,9 @@ def menu_principal():
     
 def menu_iniciar_sesion():
     print('\n\n->INICIAR SESION:',
-          '\n       1. Administrador',
-          '\n       2. Cliente',
-          '\n       3. Regresar al menú principal')
+          '\n   1. Administrador',
+          '\n   2. Cliente',
+          '\n   3. Regresar al menú principal')
 
 def imprimir_menu_principal():
     while True:
