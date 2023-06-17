@@ -49,33 +49,3 @@ class Administrador:
                     print('\n\n*Opción inválida*')
         else:
             print("\n-----Correo o contraseña incorrectos-----")
-
-# Crear un usuario de ejemplo
-# usuario_ejemplo = Administrador("administrador1@usac.edu.com", "contrasena1")
-
-# Iniciar sesión
-# usuario_ejemplo.iniciar_sesion()
-
-
-
-
-# # Base de datos de usuarios registrados (solo para fines de demostración)
-# usuarios_registrados = {
-#     'usuario1@example.com': 'contrasena1',
-#     'usuario2@example.com': 'contrasena2',
-#     'usuario3@example.com': 'contrasena3'
-# }
-
-
-# def iniciar_sesion():
-#     print("Inicio de sesión")
-#     correo = input("Ingrese su correo electrónico: ")
-#     contrasena = input("Ingrese su contraseña: ")
-
-#     if correo in usuarios_registrados and usuarios_registrados[correo] == contrasena:
-#         print("Inicio de sesión exitoso. ¡Bienvenido!")
-#         # Aquí puedes agregar la lógica adicional que deseas ejecutar después del inicio de sesión exitoso
-#     else:
-#         print("Credenciales inválidas. Por favor, inténtelo nuevamente.")
-
-# iniciar_sesion()

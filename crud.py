@@ -5,8 +5,6 @@ Created on Fri Jun 16 22:59:03 2023
 @author: Erick
 """
 
-
-
 class Crud:
     def __init__(self, crear, leer, modificar, eliminar):
         self.crear = crear

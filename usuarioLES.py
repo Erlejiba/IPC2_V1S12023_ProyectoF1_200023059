@@ -31,12 +31,10 @@ class Usuario:
 
     def Imprimir(self):
         actual = self.cabeza
-        #print(actual.dato)
         actual.dato.imprimir()
         while actual.siguiente is not None:
             actual = actual.siguiente
             actual.dato.imprimir()
-            #print(actual.dato)
 
     def CargarXML(self, operacion):
         
@@ -53,13 +51,11 @@ class Usuario:
             
             objeto = Registro(rol, nombre, apellido, telefono, correo, contrasena)
             
-            if operacion == 1: # agregar datos a lista
+            if operacion == 1: # agregar datos a la lista
                 self.add(objeto)
             elif operacion == 2:            
                 self.modify(objeto, indice)
             
-            #print(f"codigo: {codigo} nombre: {nombre}")
-
     def editarXML(self):
         tree = ET.parse('usuarios.xml')
         root = tree.getroot()

@@ -15,8 +15,6 @@ class Pelicula:
         tree = ET.parse('peliculas.xml')
         root = tree.getroot()
         
-        #cine = root.find('categorias')
-        
         for categoria in root.findall("categoria"):
             nombre = categoria.find('nombre').text
             print(f"\nNombre: {nombre.strip()}")
