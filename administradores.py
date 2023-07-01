@@ -23,8 +23,6 @@ class Administrador:
     def iniciar_sesion_admin(self):
         correo = input("\n\nIngrese su correo electrónico: ")
         contrasena = input("Ingrese su contraseña: ")
-    
-        
         if correo == self.correo_admin and contrasena == self.contrasena_admin:
             print('\n¡BIENVENIDO! \|/ INICIO DE SESION EXITOSO \|/')
             while True:
